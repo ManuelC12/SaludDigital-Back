@@ -24,7 +24,21 @@ builder.Services.AddScoped<GlobalFunctions>();
 builder.Services.AddMediatR(typeof(RegisterUser.Manejador).Assembly);
 builder.Services.AddValidatorsFromAssembly(typeof(RegisterUser.Validador).Assembly);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
+
+app.UseCors("AllowAll");
+
 
 using (var scope = app.Services.CreateScope())
 {
