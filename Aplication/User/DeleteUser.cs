@@ -52,7 +52,7 @@ namespace SaludDigital.Aplication.User
                 else
                 {
                     res.Info = "Error al eliminar el usuario";
-                    res.Status = "ok";
+                    res.Status = "error";
                 }
 
                 return res;
