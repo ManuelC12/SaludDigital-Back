@@ -51,39 +51,39 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[4.0.3, )"
+              "version": "[3.7.100, )"
             },
             "Azure.Core": {
               "target": "Package",
-              "version": "[1.50.0, )"
+              "version": "[1.35.0, )"
             },
             "Azure.Identity": {
               "target": "Package",
-              "version": "[1.17.0, )"
+              "version": "[1.10.0, )"
             },
             "Castle.Core": {
               "target": "Package",
-              "version": "[5.2.1, )"
+              "version": "[5.1.1, )"
             },
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[10.3.3, )"
+              "version": "[11.3.0, )"
             },
             "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
-              "version": "[10.3.3, )"
+              "version": "[11.8.0, )"
             },
             "MailKit": {
               "target": "Package",
-              "version": "[4.14.1, )"
+              "version": "[4.3.0, )"
             },
             "MediatR": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[12.1.1, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[11.0.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -91,11 +91,11 @@
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[6.0.25, )"
             },
             "Microsoft.Bcl.AsyncInterfaces": {
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -119,51 +119,51 @@
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[6.0.1, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.Identity.Client": {
               "target": "Package",
-              "version": "[4.79.0, )"
+              "version": "[4.56.0, )"
             },
             "Microsoft.Identity.Client.Extensions.Msal": {
               "target": "Package",
-              "version": "[4.79.0, )"
+              "version": "[4.56.0, )"
             },
             "Microsoft.IdentityModel.Abstractions": {
               "target": "Package",
-              "version": "[8.14.0, )"
+              "version": "[6.35.0, )"
             },
             "Microsoft.OpenApi": {
               "target": "Package",
-              "version": "[1.2.3, )"
+              "version": "[1.4.3, )"
             },
             "Microsoft.Win32.SystemEvents": {
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[6.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.4, )"
+              "version": "[13.0.3, )"
             },
             "Newtonsoft.Json.Bson": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[1.0.2, )"
             },
             "Polly": {
               "target": "Package",
-              "version": "[8.6.4, )"
+              "version": "[8.0.0, )"
             },
             "Serilog": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[3.1.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -183,27 +183,27 @@
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.9.0, )"
+              "version": "[4.8.5, )"
             },
             "System.Diagnostics.EventLog": {
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[6.0.0, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[6.0.0, )"
             },
             "System.Security.Cryptography.Pkcs": {
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[6.0.3, )"
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[6.0.9, )"
             },
             "System.Threading.Channels": {
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
