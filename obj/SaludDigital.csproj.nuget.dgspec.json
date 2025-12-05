@@ -79,7 +79,7 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.1.1, )"
+              "version": "[11.1.0, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -119,15 +119,15 @@
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.1, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.Identity.Client": {
               "target": "Package",
@@ -139,7 +139,7 @@
             },
             "Microsoft.IdentityModel.Abstractions": {
               "target": "Package",
-              "version": "[6.36.0, )"
+              "version": "[6.35.0, )"
             },
             "Microsoft.OpenApi": {
               "target": "Package",
