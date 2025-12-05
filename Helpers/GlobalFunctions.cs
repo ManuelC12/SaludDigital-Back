@@ -62,13 +62,21 @@ namespace SaludDigital.Helpers
             var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
             var signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
 
+            // AQUÍ AGREGAMOS LOS DATOS QUE FALTABAN:
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim("Name", user.Name),
-                new Claim("iUser", user.iUser.ToString()),
-                new Claim(JwtRegisteredClaimNames.Email, user.Email)
-            };
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+        
+        // Datos que ya tenías:
+        new Claim("Name", user.Name),
+        new Claim("iUser", user.iUser.ToString()),
+        new Claim(JwtRegisteredClaimNames.Email, user.Email),
+
+        // --- NUEVOS DATOS (Agregados para que Flutter los vea) ---
+        new Claim("Age", user.Age.ToString()),       // Importante: .ToString() porque Claim solo acepta texto
+        new Claim("Gender", user.Gender),            // "M", "F", etc.
+        new Claim("PhoneNumber", user.PhoneNumber)   // El celular
+    };
 
             var token = new JwtSecurityToken(
                 issuer: issuer,

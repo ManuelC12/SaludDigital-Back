@@ -19,7 +19,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// --- TUS SERVICIOS ---
 builder.Services.AddScoped<GlobalFunctions>();
+
+
 
 builder.Services.AddMediatR(typeof(RegisterUser.Manejador).Assembly);
 builder.Services.AddValidatorsFromAssembly(typeof(RegisterUser.Validador).Assembly);
@@ -38,7 +41,6 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 app.UseCors("AllowAll");
-
 
 using (var scope = app.Services.CreateScope())
 {

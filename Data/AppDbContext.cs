@@ -10,5 +10,9 @@ namespace SaludDigital.Data
         public DbSet<Usuario> Users { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<EmotionRecord> EmotionRecords { get; set; }
+
+  
+
+
     }
 }

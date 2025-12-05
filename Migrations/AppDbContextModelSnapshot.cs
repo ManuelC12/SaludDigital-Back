@@ -102,7 +102,7 @@ namespace SaludDigital.Migrations
                     b.ToTable("EmotionRecords");
                 });
 
-            modelBuilder.Entity("SaludDigital.Models.User", b =>
+            modelBuilder.Entity("SaludDigital.Models.Usuario", b =>
                 {
                     b.Property<Guid>("iUser")
                         .ValueGeneratedOnAdd()
@@ -129,10 +129,16 @@ namespace SaludDigital.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PasswordResetToken")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
+
+                    b.Property<DateTime?>("ResetTokenExpires")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("iUser");
 
@@ -141,7 +147,7 @@ namespace SaludDigital.Migrations
 
             modelBuilder.Entity("SaludDigital.Models.EmotionRecord", b =>
                 {
-                    b.HasOne("SaludDigital.Models.User", "User")
+                    b.HasOne("SaludDigital.Models.Usuario", "User")
                         .WithMany()
                         .HasForeignKey("iUser")
                         .OnDelete(DeleteBehavior.Cascade)
