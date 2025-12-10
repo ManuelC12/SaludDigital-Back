@@ -14,13 +14,15 @@ namespace SaludDigital.Models
         public string Estado { get; set; } = "Pendiente";
         public string LinkVideollamada { get; set; } = "";
 
-        // Relación con PACIENTE
+        // Relación con PACIENTE (Los usuarios sí usan INT, así que esto se queda igual)
         public int PacienteId { get; set; }
         [ForeignKey("PacienteId")]
         public Usuario? Paciente { get; set; }
 
-        // Relación con TERAPEUTA (Usando la clase Doctor)
-        public int TerapeutaId { get; set; }
+        // --- CORRECCIÓN AQUÍ ---
+        // Tu tabla Doctor usa GUID, así que aquí debe ser GUID también.
+        public Guid TerapeutaId { get; set; }
+
         [ForeignKey("TerapeutaId")]
         public Doctor? Terapeuta { get; set; }
     }

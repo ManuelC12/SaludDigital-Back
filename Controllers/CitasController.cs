@@ -16,11 +16,10 @@ namespace SaludDigital.Controllers
             _context = context;
         }
 
-        // AGENDAR CITA
+        // AGENDAR
         [HttpPost]
         public async Task<ActionResult<Cita>> Agendar(Cita cita)
         {
-            // Generar link único
             cita.LinkVideollamada = $"https://meet.jit.si/saluddigital-{Guid.NewGuid()}";
             cita.Estado = "Pendiente";
 
@@ -29,24 +28,25 @@ namespace SaludDigital.Controllers
             return Ok(cita);
         }
 
-        // VER CITAS DE UN PACIENTE
+        // VER CITAS PACIENTE (Sigue siendo INT)
         [HttpGet("paciente/{id}")]
         public async Task<ActionResult<List<Cita>>> GetPorPaciente(int id)
         {
             return await _context.Citas
-                .Include(c => c.Terapeuta) // Coincide con Models/Cita.cs
+                .Include(c => c.Terapeuta)
                 .Where(c => c.PacienteId == id)
                 .OrderBy(c => c.FechaHora)
                 .ToListAsync();
         }
 
-        // VER CITAS DE UN TERAPEUTA
+        // --- CORRECCIÓN AQUÍ ---
+        // VER CITAS TERAPEUTA (Ahora recibe GUID)
         [HttpGet("doctor/{id}")]
-        public async Task<ActionResult<List<Cita>>> GetPorTerapeuta(int id)
+        public async Task<ActionResult<List<Cita>>> GetPorTerapeuta(Guid id)
         {
             return await _context.Citas
                 .Include(c => c.Paciente)
-                .Where(c => c.TerapeutaId == id) // Coincide con Models/Cita.cs
+                .Where(c => c.TerapeutaId == id)
                 .OrderBy(c => c.FechaHora)
                 .ToListAsync();
         }
