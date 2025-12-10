@@ -34,7 +34,7 @@
 
                     [Required]
                     [MinLength(1)]
-                    public string isDoctor { get; set; } = "N";
+                    public string isDoctor { get; set; } = string.Empty;  // Ejemplo: "N" ó "S"
 
-                }
+    }
             }
