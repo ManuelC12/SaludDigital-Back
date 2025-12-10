@@ -62,7 +62,8 @@ namespace SaludDigital.Aplication.User
                     Email = user.Email,
                     PhoneNumber = user.PhoneNumber,
                     Age = user.Age,
-                    Gender = user.Gender
+                    Gender = user.Gender,
+                    isDoctor = user.IsDoctor
                 };
 
                 // ✅ Aquí ya puedes usar la instancia inyectada
