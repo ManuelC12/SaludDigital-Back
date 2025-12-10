@@ -7,12 +7,11 @@ namespace SaludDigital.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Usuario> Users { get; set; }
-        public DbSet<Doctor> Doctors { get; set; }
-        public DbSet<EmotionRecord> EmotionRecords { get; set; }
+        public DbSet<Usuario> Users { get; set; } = null!;
+        public DbSet<Doctor> Doctors { get; set; } = null!;
+        public DbSet<EmotionRecord> EmotionRecords { get; set; } = null!; // Si lo tenías
 
-  
-
-
+        // --- ESTA LÍNEA ES LA CLAVE PARA ARREGLAR EL ERROR DE BUILD ---
+        public DbSet<Cita> Citas { get; set; } = null!;
     }
 }

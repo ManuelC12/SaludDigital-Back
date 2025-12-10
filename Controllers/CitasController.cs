@@ -16,11 +16,11 @@ namespace SaludDigital.Controllers
             _context = context;
         }
 
-        // 1. AGENDAR UNA CITA
+        // AGENDAR CITA
         [HttpPost]
         public async Task<ActionResult<Cita>> Agendar(Cita cita)
         {
-            // Generar link de reunión simulado (podrías integrar Zoom/Jitsi aquí)
+            // Generar link único
             cita.LinkVideollamada = $"https://meet.jit.si/saluddigital-{Guid.NewGuid()}";
             cita.Estado = "Pendiente";
 
@@ -29,24 +29,24 @@ namespace SaludDigital.Controllers
             return Ok(cita);
         }
 
-        // 2. VER CITAS DE UN PACIENTE
+        // VER CITAS DE UN PACIENTE
         [HttpGet("paciente/{id}")]
         public async Task<ActionResult<List<Cita>>> GetPorPaciente(int id)
         {
             return await _context.Citas
-                .Include(c => c.Terapeuta) // Traer datos del doctor
+                .Include(c => c.Terapeuta) // Coincide con Models/Cita.cs
                 .Where(c => c.PacienteId == id)
                 .OrderBy(c => c.FechaHora)
                 .ToListAsync();
         }
 
-        // 3. VER CITAS DE UN TERAPEUTA (Para el nuevo Dashboard)
-        [HttpGet("terapeuta/{id}")]
+        // VER CITAS DE UN TERAPEUTA
+        [HttpGet("doctor/{id}")]
         public async Task<ActionResult<List<Cita>>> GetPorTerapeuta(int id)
         {
             return await _context.Citas
-                .Include(c => c.Paciente) // Traer datos del paciente
-                .Where(c => c.TerapeutaId == id)
+                .Include(c => c.Paciente)
+                .Where(c => c.TerapeutaId == id) // Coincide con Models/Cita.cs
                 .OrderBy(c => c.FechaHora)
                 .ToListAsync();
         }
