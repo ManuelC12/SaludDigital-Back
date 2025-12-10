@@ -28,9 +28,9 @@ namespace SaludDigital.Controllers
             return Ok(cita);
         }
 
-        // VER CITAS PACIENTE (Sigue siendo INT)
+        // VER CITAS PACIENTE (Ahora recibe Guid)
         [HttpGet("paciente/{id}")]
-        public async Task<ActionResult<List<Cita>>> GetPorPaciente(int id)
+        public async Task<ActionResult<List<Cita>>> GetPorPaciente(Guid id)
         {
             return await _context.Citas
                 .Include(c => c.Terapeuta)
@@ -39,8 +39,7 @@ namespace SaludDigital.Controllers
                 .ToListAsync();
         }
 
-        // --- CORRECCIÓN AQUÍ ---
-        // VER CITAS TERAPEUTA (Ahora recibe GUID)
+        // VER CITAS TERAPEUTA (Ahora recibe Guid)
         [HttpGet("doctor/{id}")]
         public async Task<ActionResult<List<Cita>>> GetPorTerapeuta(Guid id)
         {
