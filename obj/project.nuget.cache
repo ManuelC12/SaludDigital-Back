@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FPWeexMAQb8=",
+  "dgSpecHash": "TcykiThO0JMDLTMjLhcarIbSpK/EGA4i/kba7DDAkhI+6HnNs4dpcXpGSslUKdVJLXutd06hge993cRc0zCkJA==",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
   "expectedPackageFiles": [
@@ -100,90 +100,5 @@
     "C:\\Users\\hp\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "El paquete \"Azure.Identity\" 1.10.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-5mfx-4wcx-rv27",
-      "projectPath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "libraryId": "Azure.Identity",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "message": "El paquete \"Azure.Identity\" 1.10.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
-      "projectPath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "libraryId": "Azure.Identity",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "message": "El paquete \"Azure.Identity\" 1.10.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-wvxc-855f-jvrv",
-      "projectPath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "libraryId": "Azure.Identity",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "message": "El paquete \"Microsoft.Identity.Client\" 4.56.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
-      "projectPath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "libraryId": "Microsoft.Identity.Client",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1901",
-      "level": "Warning",
-      "message": "El paquete \"Microsoft.Identity.Client\" 4.56.0 tiene una vulnerabilidad de gravedad baja conocida, https://github.com/advisories/GHSA-x674-v45j-fwxw",
-      "projectPath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "libraryId": "Microsoft.Identity.Client",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "El paquete \"System.Data.SqlClient\" 4.8.5 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
-      "projectPath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "libraryId": "System.Data.SqlClient",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "El paquete \"System.Text.Json\" 6.0.9 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
-      "projectPath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\hp\\Documents\\SaludDigital-Back\\SaludDigital.csproj",
-      "libraryId": "System.Text.Json",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }
