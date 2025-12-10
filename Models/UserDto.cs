@@ -31,5 +31,9 @@
             [Required]
             [MaxLength(1)]
             public string Gender { get; set; } = string.Empty; // Ejemplo: "M" ó "F"
+
+            [Required]
+            [MinLength(1)]
+            public string isDoctor { get; set; } = "N";
         }
     }

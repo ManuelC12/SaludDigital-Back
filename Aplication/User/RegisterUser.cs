@@ -62,7 +62,9 @@
                         PhoneNumber = request.Celular!,
                         Password = GlobalFunctions.ComputeSha256Hash(request.Password!),
                         Gender = request.Genre!,
-                        Age = request.Edad
+                        Age = request.Edad,
+                        isDoctor = "N"
+                        
                     };
 
                     context.Users.Add(newUser);
