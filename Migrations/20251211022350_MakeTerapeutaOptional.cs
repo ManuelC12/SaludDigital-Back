@@ -13,12 +13,12 @@ namespace SaludDigital.Migrations
                 name: "FK_Citas_Doctors_TerapeutaId",
                 table: "Citas");
 
-            migrationBuilder.AddColumn<string>(
-                name: "isDoctor",
-                table: "Users",
-                type: "nvarchar(max)",
-                nullable: false,
-                defaultValue: "");
+            //migrationBuilder.AddColumn<string>(
+            //    name: "isDoctor",
+            //    table: "Users",
+            //    type: "nvarchar(max)",
+            //    nullable: false,
+            //    defaultValue: "");
 
             migrationBuilder.AlterColumn<Guid>(
                 name: "TerapeutaId",
@@ -42,9 +42,9 @@ namespace SaludDigital.Migrations
                 name: "FK_Citas_Doctors_TerapeutaId",
                 table: "Citas");
 
-            migrationBuilder.DropColumn(
-                name: "isDoctor",
-                table: "Users");
+            //migrationBuilder.DropColumn(
+            //    name: "isDoctor",
+            //    table: "Users");
 
             migrationBuilder.AlterColumn<Guid>(
                 name: "TerapeutaId",
