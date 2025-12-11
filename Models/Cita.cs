@@ -14,14 +14,14 @@ namespace SaludDigital.Models
         public string Estado { get; set; } = "Pendiente";
         public string LinkVideollamada { get; set; } = "";
 
-        // --- CORRECCIÓN: Paciente ahora es Guid ---
+        // Paciente sigue siendo obligatorio
         public Guid PacienteId { get; set; }
 
         [ForeignKey("PacienteId")]
         public Usuario? Paciente { get; set; }
 
-        // --- Terapueta también es Guid ---
-        public Guid TerapeutaId { get; set; }
+        // --- CAMBIO: Hacemos el Guid nullable (con ?) ---
+        public Guid? TerapeutaId { get; set; }
 
         [ForeignKey("TerapeutaId")]
         public Doctor? Terapeuta { get; set; }
