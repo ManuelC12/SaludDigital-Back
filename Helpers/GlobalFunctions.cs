@@ -75,7 +75,8 @@ namespace SaludDigital.Helpers
         // --- NUEVOS DATOS (Agregados para que Flutter los vea) ---
         new Claim("Age", user.Age.ToString()),       // Importante: .ToString() porque Claim solo acepta texto
         new Claim("Gender", user.Gender),            // "M", "F", etc.
-        new Claim("PhoneNumber", user.PhoneNumber)   // El celular
+        new Claim("PhoneNumber", user.PhoneNumber),   // El celular
+        new Claim("isDoctor", user.isDoctor)   // Es doctor?
     };
 
             var token = new JwtSecurityToken(
